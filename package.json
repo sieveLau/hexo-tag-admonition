@@ -1,14 +1,14 @@
 {
   "name": "hexo-tag-admonition",
   "version": "1.0.0",
-  "description": "placeholder",
+  "description": "Tag plugin for hexo to support admonition",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "placeholder"
+    "url": "https://github.com/haishanh/hexo-tag-admonition"
   },
   "keywords": [
     "hexo",
@@ -17,6 +17,6 @@
     "note",
     "warning"
   ],
-  "author": "Han Haishan",
+  "author": "Han Haishan <haishanhan@gmail.com> (http://hanhaishan.com)",
   "license": "MIT"
 }
