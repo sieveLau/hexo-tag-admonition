@@ -1,0 +1,22 @@
+{
+  "name": "hexo-tag-admonition",
+  "version": "1.0.0",
+  "description": "placeholder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "placeholder"
+  },
+  "keywords": [
+    "hexo",
+    "tag",
+    "admonition",
+    "note",
+    "warning"
+  ],
+  "author": "Han Haishan",
+  "license": "MIT"
+}
