@@ -51,4 +51,11 @@ Also, I think it's good practice to also styling similiar keywords. For example 
 }
 ```
 
+Have a look at this [codepen][codepen].
+
+## License
+
+MIT
+
 [zxcvb-admonition]: https://github.com/haishanh/hexo-theme-zxcvb/blob/master/source/_scss/_admonition.scss
+[codepen]: http://codepen.io/haishanh/pen/zqqbmq/?editors=1100
