@@ -2,7 +2,13 @@ This is a tag plugin for hexo to support admonition.
 
 ## Basic usage
 
-In your markdown file:
+Ofcourse, install the plugin first:
+
+```
+npm install --save hexo-tag-admonition
+```
+
+Then in your markdown file:
 
 ```
 {% admonition danger Don't do this %}
@@ -20,6 +26,8 @@ will turn into something like this:
   <p>This is an another line.</p>
 </div>
 ```
+
+Note: there is no space or newline charater between tags in real implementation.
 
 ## What does this mean
 
