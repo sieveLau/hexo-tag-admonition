@@ -1,3 +1,4 @@
+/** not used after using hexo render
 function escape(html, encode) {
   return html
     .replace(!encode ? /&(?!#?\w+;)/g : /&/g, '&amp;')
@@ -6,6 +7,7 @@ function escape(html, encode) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
+*/
 
 hexo.extend.tag.register('admonition', function(args, content) {
   var cls = args[0] || 'note';
@@ -14,13 +16,13 @@ hexo.extend.tag.register('admonition', function(args, content) {
 
   if (content) {
     content.split('\n').forEach(function(line) {
-      lines += '<p>' + escape(line, true) + '</p>';
+      lines += hexo.render.renderSync({text: line, engine: 'markdown'});
     });
   }
 
-  return '<div class="admonition ' + cls + 
-          '"><p class="admonition-title">' + 
-          title + '</p>' + lines + '</div>'; 
+  return '<div class="admonition ' + cls +
+          '"><p class="admonition-title">' +
+          title + '</p>' + lines + '</div>';
 }, {
   async: true,
   ends: true
