@@ -12,13 +12,10 @@ function escape(html, encode) {
 hexo.extend.tag.register('admonition', function(args, content) {
   var cls = args[0] || 'note';
   var title = args.slice(1).join(' ') || 'Note';
-  var lines = '';
-
-  if (content) {
-    content.split('\n').forEach(function(line) {
-      lines += hexo.render.renderSync({text: line, engine: 'markdown'});
-    });
-  }
+  var lines = hexo.render.renderSync({
+    text: content,
+    engine: 'markdown'
+  });
 
   return '<div class="admonition ' + cls +
           '"><p class="admonition-title">' +
