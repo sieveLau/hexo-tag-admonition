@@ -64,6 +64,7 @@ Have a look at this [codepen][codepen].
 ## What I modified
 
 - Provide stylus example, since I use Hexo's default theme [Lanscape](https://github.com/hexojs/hexo-theme-landscape). Basically it is a direct translation from [the css example on codepen][codepen] to stylus.
+- Add [jsdom](https://github.com/jsdom/jsdom) as dependency, in order to add class `admonition-content` to admonition paragraphs. With this modification, we can now better control the appearance.
 
 ## Useful Tools
 

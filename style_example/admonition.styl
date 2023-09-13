@@ -1,19 +1,8 @@
-admon-color(color) {
-    color = darken(color, 15%)
-    background-color lighten(color, 25%)
-    border-color color
-}
-  
 .admonition {
-  padding 0 15px
-  margin-bottom 20px
-  border 1px solid transparent
-  border-radius 4px
-  text-align left
-  &-title {
-    font-weight bold
-    text-align left
-  }
+  display box
+  background-color: rgba(128, 128, 128, 10%)
+  border-radius: 0.45rem;
+  border-color: transparent
   &.note,
   &.info,
   &.tips {
@@ -31,4 +20,32 @@ admon-color(color) {
     base-alizarin = #e74c3c
     admon-color(base-alizarin)
   }
+}
+
+p.admonition-content {
+  position static
+  color black
+  padding 1rem 1rem 0.75rem
+  width 90%
+  margin 0
+  display flex
+}
+p.admonition-title{
+  display flex
+  position relative
+  font-weight bold
+  text-align left
+  align-items: center
+  justify-content: flex-start
+  top 0
+  left 0
+  padding: 0 0.5rem;
+  height: 1.25rem;
+  line-height: 1;
+  font-weight: 500;
+  border-radius: 0.45rem;
+  background-color: #e18114;
+  color: #fff;
+  margin-bottom 0px
+  width fit-content
 }
