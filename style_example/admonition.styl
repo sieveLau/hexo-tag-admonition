@@ -3,32 +3,35 @@
   background-color: rgba(128, 128, 128, 10%)
   border-radius: 0.45rem;
   border-color: transparent
+    padding-bottom: 16px;
   &.note,
   &.info,
   &.tips {
-    base-blue = #3498db
-    admon-color(base-blue)
+    .admonition-title{
+      background-color: #3498db
+    }
   }
   &.warning,
   &.warn,
   &.important {
-    base-carrot = #e67e22
-    admon-color(base-carrot)
+    .admonition-title {
+      background-color: #e67e22
+    }
   }
   &.danger,
   &.critical {
-    base-alizarin = #e74c3c
-    admon-color(base-alizarin)
+    .admonition-title {
+      background-color:  #e74c3c
+    }
   }
 }
 
 p.admonition-content {
   position static
   color black
-  padding 1rem 1rem 0.75rem
-  width 90%
+  padding 0rem 1rem 0rem
   margin 0
-  display flex
+  line-height: 1.6
 }
 p.admonition-title{
   display flex
@@ -44,8 +47,7 @@ p.admonition-title{
   line-height: 1;
   font-weight: 500;
   border-radius: 0.45rem;
-  background-color: #e18114;
   color: #fff;
-  margin-bottom 0px
+  margin-bottom: 11px
   width fit-content
 }
