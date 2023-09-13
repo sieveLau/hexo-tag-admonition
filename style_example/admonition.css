@@ -1,0 +1,28 @@
+.admonition {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: left;
+}
+.admonition-title {
+  font-weight: bold;
+  text-align: left;
+}
+.admonition.note,
+.admonition.info,
+.admonition.tips {
+  background-color: #4da4df;
+  border-color: #2383c4;
+}
+.admonition.warning,
+.admonition.warn,
+.admonition.important {
+  background-color: #e98f3f;
+  border-color: #ca6b17;
+}
+.admonition.danger,
+.admonition.critical {
+  background-color: #e95e4f;
+  border-color: #dc2d1b;
+}

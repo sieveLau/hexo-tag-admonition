@@ -2,10 +2,10 @@ This is a tag plugin for hexo to support admonition.
 
 ## Basic usage
 
-Ofcourse, install the plugin first:
+Of course, install the plugin first:
 
 ```
-npm install --save hexo-tag-admonition
+npm install --save https://github.com/sieveLau/hexo-tag-admonition
 ```
 
 Then in your markdown file:
@@ -39,7 +39,7 @@ Lines between the open and close tag are the contents, contents will be put in a
 
 ## Styling
 
-Then you can style it with proper css rules. Here is a [example][zxcvb-admonition] using sass.
+Then you can style it with proper css rules. Here is a [example][stylus] using stylus.
 
 It is recommended to use at least 3 levels of admonition, for example: note, warning and danger. Each with it's own style.
 
@@ -61,9 +61,18 @@ Also, I think it's good practice to also styling similiar keywords. For example 
 
 Have a look at this [codepen][codepen].
 
+## What I modified
+
+- Provide stylus example, since I use Hexo's default theme [Lanscape](https://github.com/hexojs/hexo-theme-landscape). Basically it is a direct translation from [the css example on codepen][codepen] to stylus.
+
+## Useful Tools
+
+- [Stylus Doc](https://stylus-lang.com/docs/): Mixins, Variables, and the CLI
+- [Stylus Playground](https://stylus-lang.com/try.html): If you don't want to install stylus on your machine, you can use this online compiler.
+
 ## License
 
 MIT
 
-[zxcvb-admonition]: https://github.com/haishanh/hexo-theme-zxcvb/blob/master/source/_scss/_admonition.scss
+[stylus]: https://github.com/sieveLau/hexo-tag-admonition/blob/master/style_example/admonition.styl
 [codepen]: http://codepen.io/haishanh/pen/zqqbmq/?editors=1100
