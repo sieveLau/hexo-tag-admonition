@@ -22,8 +22,8 @@ will turn into something like this:
 ```html
 <div class="admonition danger">
   <p class="admonition-title">Don't do this</p>
-  <p>Hello this is just a test.</p>
-  <p>This is an another line.</p>
+  <p class="admonition-content">Hello this is just a test.</p>
+  <p class="admonition-content">This is an another line.</p>
 </div>
 ```
 
@@ -60,6 +60,12 @@ Also, I think it's good practice to also styling similiar keywords. For example 
 ```
 
 Have a look at this [codepen][codepen].
+
+More: 
+
+- admonition title will be wrapped between `<p class="admonition-title"></p>`
+- admonition contents, each line wrapped in a single `<p class="admonition-content"></p>`
+- the whole block wrapped in `<div class="admonition level"></div>`, note that level is the word you type in the tag (for example, danger)
 
 ## What I modified
 
