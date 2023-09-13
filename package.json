@@ -18,5 +18,8 @@
     "warning"
   ],
   "author": "Han Haishan <haishanhan@gmail.com> (http://hanhaishan.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
 }
