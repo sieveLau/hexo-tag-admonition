@@ -67,6 +67,16 @@ More:
 - admonition contents, each line wrapped in a single `<p class="admonition-content"></p>`
 - the whole block wrapped in `<div class="admonition level"></div>`, note that level is the word you type in the tag (for example, danger)
 
+### Example: How to use this on Hexo Theme Landscape
+
+First, install this plugin. Second, download [landscape](https://github.com/hexojs/hexo-theme-landscape) from its release page and extract into `themes/landscape`. Third, download [the example admonition.styl][stylus] to `themes/landscape/source/css/_partial`, and add this line to `themes/landscape/source/css/style.styl`:
+
+```stylus
+@import "_partial/admonition"
+```
+
+Done.
+
 ## What I modified
 
 - Provide stylus example, since I use Hexo's default theme [Lanscape](https://github.com/hexojs/hexo-theme-landscape). Basically it is a direct translation from [the css example on codepen][codepen] to stylus.
